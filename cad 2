@@ -1,0 +1,226 @@
+Applied Mathematuics - 1 
+Name:                                   div:A1
+ Practical No.2                       Date:05/08/2024       
+Title:Study of matrices and matrix operations by using MATLAB
+ Aim/Objective: To study matrix operations by using MATLAB
+ Tools/Resources:
+ 1.MATLAB R2021 a 
+2.E -Resources 
+3.Refrnce books,notes
+ Theory concepts:
+ 1.Defining Matrix 
+2.Different types of matrices
+ 3.Operations on matrix 
+4.Determinant,inverse,transpose,trace,diagonal of element,etc
+ 5.POwer column operations,row echelon form rank.
+ Procedure: 
+1.Open MATLAB, create live script file 
+2.Define matrices of different types
+ 3.Special types of matrices 
+4.Operations on matrices 
+5.Perform matrix operations
+ 6.Find reduced row echelon form(rref)
+ 7.Find rank of matrix
+ %1. Row matrix 
+R=[1 2 3 4 5]
+ R = 1×5
+ 1
+     1     2     3     4     5
+ %2.Coloumn matrix 
+C=[1;2;3;4;5;6;7]
+ C = 7×1
+     1
+     2
+     3
+     4
+     5
+     6
+     7
+ %3.Zero matrix/Null matrix
+ Z=zeros(3,4)
+ Z = 3×4
+     0     0     0     0
+     0     0     0     0
+     0     0     0     0
+ A=[0 5 0 8;2 0 2 4; 1 5 0 8;1 9 4 7]
+ A = 4×4
+     0     5     0     8
+     2     0     2     4
+     1     5     0     8
+     1     9     4     7
+ % Special matrices 
+%1.Identity matrix 
+I= eye(5)
+ I = 5×5
+     1     0     0     0     0
+     0     1     0     0     0
+     0     0     1     0     0
+     0     0     0     1     0
+     0     0     0     0     1
+ %2.Ones matrix
+ B=ones(4,5)
+ B = 4×5
+     1     1     1     1     1
+     1     1     1     1     1
+     1     1     1     1     1
+     1     1     1     1     1
+ C=2*ones(4,5)
+ C = 4×5
+     2     2     2     2     2
+     2     2     2     2     2
+     2     2     2     2     2
+     2     2     2     2     2
+ 2
+ones(4,4)-eye(4)
+ ans = 4×4
+     0     1     1     1
+     1     0     1     1
+     1     1     0     1
+     1     1     1     0
+ %3.Magic square matrix 
+magic(3)
+ ans = 3×3
+     8     1     6
+     3     5     7
+     4     9     2
+ A=magic(4)
+ ans = 4×4
+    16     2     3    13
+     5    11    10     8
+     9     7     6    12
+     4    14    15     1
+ %Matrix operations 
+A=[1 3 5;5 -2 6;2 5 1] 
+A = 3×3
+     1     3     5
+     5    -2     6
+     2     5     1
+    size(A)
+ ans = 1×2
+     3     3
+    B=[3 -5 9;1 0 8;0 2 5]
+ B = 3×3
+     3    -5     9
+     1     0     8
+     0     2     5
+    A+B    %Addition 
+ans = 3×3
+     4    -2    14
+     6    -2    14
+     2     7     6
+    A-B    %Subtraction
+ ans = 3×3
+    -2     8    -4
+     4    -2    -2
+     2     3    -4
+ 3
+    2*A % Scalar Multiplication 
+ans = 3×3
+     2     6    10
+    10    -4    12
+     4    10     2
+    A*B
+ ans = 3×3
+     6     5    58
+    13   -13    59
+    11    -8    63
+    det(A)  %Determinant 
+ans = 134
+    trace(A) %Trace of matrix
+ ans = 0
+    diag(A)  %Daigonal element 
+ans = 3×1
+     1
+    -2
+     1
+    inv(A)  %inverse of matix
+ ans = 3×3
+   -0.2388    0.1642    0.2090
+    0.0522   -0.0672    0.1418
+    0.2164    0.0075   -0.1269
+    A*inv(A)
+ ans = 3×3
+    1.0000    0.0000         0
+   -0.0000    1.0000    0.0000
+         0    0.0000    1.0000
+ Row operations 
+ B=[3 -5 9;1 0 8;0 2 5]
+ B = 3×3
+     3    -5     9
+     1     0     8
+     0     2     5
+ B(1,2)
+ ans = -5
+ B(3,1)
+ ans = 0
+ 4
+ B(1,:)   % First row of matrix
+ ans = 1×3
+     3    -5     9
+ B(:,2)   % Second column of matix
+ ans = 3×1
+    -5
+     0
+     2
+ B (1:2,2:3)  %Block matrix 
+ans = 2×2
+    -5     9
+     0     8
+ triu(B) %Upper triangular 
+ans = 3×3
+     3    -5     9
+     0     0     8
+     0     0     5
+ tril(B) %Lower triangular 
+ans = 3×3
+     3     0     0
+     1     0     0
+     0     2     5
+ transpose(B)  %Transpose 
+ans = 3×3
+     3     1     0
+    -5     0     2
+     9     8     5
+ B'
+ ans = 3×3
+     3     1     0
+    -5     0     2
+     9     8     5
+ Row 
+Operations/Rank/rref
+ A= [1 2 3; 4 5 6; 7 8 9]
+ A = 3×3
+     1     2     3
+     4     5     6
+     7     8     9
+ 5
+det(A)
+ ans = 6.6613e-16
+ rank(A)
+ ans = 2
+ rref(A)
+ ans = 3×3
+     1     0    -1
+     0     1     2
+     0     0     0
+ A(2,:)=A(2,:)-4*A(1,:)
+ A = 3×3
+     1     2     3
+     0    -3    -6
+     7     8     9
+ A(3,:)=A(3,:)-7*A(1,:)
+ A = 3×3
+     1     2     3
+     0    -3    -6
+     0    -6   -12
+ A(2,:)=(-1/3)*A(2,:)
+ A = 3×3
+     1     2     3
+     0     1     2
+     0    -6   -12
+ A(3,:)=A(3,:)+6*A(2,:)
+ A = 3×3
+     1     2     3
+     0     1     2
+     0     0     0
+ 6
