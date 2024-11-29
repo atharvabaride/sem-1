@@ -1,0 +1,120 @@
+maths prac 1 
+1
+ AppliedMathematics(APSC3101)
+ NAME:-AtharvaBaride Batch:A1
+ PracticalNo:-1 Date:23/07/2024
+ Title:-IndroductiontoMATLABanditsuseasscientificcalculator
+ Aim/objective:-TouseMATLABasscientificcalculaterandintroductiontoMATLAB.
+ Tools/Resoures:
+•MATLABR2022b
+ •Eresoures
+ •Refrencebook
+ Theory/concept:
+•MATLABintroduction,file,variable,commandwindow, livescript
+ •opreation,+,-,*,/,^
+ •Arithmeticfunction,polynimals,roots
+ •TrignomaticFunction
+ •Logarithmicandexponenatial
+ • Inversetrignomatricandhyperbolicfunction
+ Procedure:
+•OpenMATLAB,createlivescriptfile
+ • renameandsaveaswithmixextenssion
+ •Definevariable
+ •usetextmodeandcodemode
+ •usecommandwindow
+ •peformingarthmeticopreation
+ • findinglogerithmic,trignomatric,values,exponatialvalues
+ • findingrootsofpolynomial ,solvingeqution
+ 1)Arithmeticopration
+ 10+8%addtion
+ ans=18
+ 50-20%subtraction
+ ans=30
+5*7%multiplication
+ ans=35
+ 30/3%divistion
+ ans=10
+ 3^3%power
+ ans=27
+ sqrt(64)%squareroot
+ ans=8
+ 2048^(1/11)
+ ans=2
+ 2)TRIGNOMATRICFUNCTION
+ sind(30)
+ ans=0.5000
+ cosd(30)
+ ans=0.8660
+ tand(30)
+ ans=0.5774
+ secd(30)
+ ans=1.1547
+ cscd(30)
+ ans=2
+ cotd(30)
+ ans=1.7321
+ sin(pi/2)
+ ans=1
+ cos(pi)
+ ans=-1
+ 2
+tan(pi/4)
+ ans=1.0000
+ %conversiondeg2rad(100)%degreesto
+ radians
+ ans=1.7453
+ rad2deg(100)%radianstodegree
+ ans=5.7296e+03
+ 3)Logarith
+ micandexponentional
+ log10(1000)
+ ans=3
+ log2(2)
+ ans=1
+ log(10)
+ ans=2.3026
+ exp(1)
+ ans=2.7183
+ exp(2.3026)
+ ans=10.0001
+ exp(5)
+ ans=148.4132
+ log(ans)
+ ans=5
+ 4)InverseTrigno
+ asin(1)
+ metricfunction
+ ans=1.5708
+ cos(pi)
+ ans=-1
+ 3
+acos(-1)
+ ans=3.1416
+ tand(45)
+ ans=1
+ atand(1)
+ ans=45
+ atan(1)
+ ans=0.7854
+ tan(pi/4)
+ ans=1.0000
+ sec(pi/6)
+ ans=1.1547
+ asec(0)
+ ans=0.0000+ Infi
+ acsc(1)
+ ans=1.5708
+ csc(pi/2)
+ ans=1
+ 5)Algebraicfunctions
+ symsxf=x^2+4*x+4
+ f=
+ solve(f==0,{x})
+ ans=
+ p=[144]
+ p=1×3
+ 1 4 4
+ 4
+roots(p)
+ ans=2×1-2-2
+ 5
